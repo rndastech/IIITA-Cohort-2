@@ -85,7 +85,7 @@ function App() {
     
     // If time is after 12:00 PM (noon), use previous day at 11:59 PM
     // Otherwise, use day before previous day at 11:59 PM
-    const daysToSubtract = currentHour >= 12 ? 1 : 2
+    const daysToSubtract = currentHour >= 15 ? 1 : 2
     
     const lastUpdated = new Date(now)
     lastUpdated.setDate(lastUpdated.getDate() - daysToSubtract)
